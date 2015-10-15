@@ -1,6 +1,7 @@
 package es.upm.miw.pd.composite.expression.solution;
 
 public class Numero extends Expresion {
+    
     private int valor;
 
     public Numero(int valor) {
@@ -10,5 +11,10 @@ public class Numero extends Expresion {
     @Override
     public int operar() {
         return this.valor;
+    }
+
+    @Override
+    public String toString() {
+        return String.valueOf(valor);
     }
 }
