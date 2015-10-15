@@ -13,6 +13,7 @@ import es.upm.miw.pd.composite.expression.solution.Restar;
 import es.upm.miw.pd.composite.expression.solution.Sumar;
 
 public class ExpressionTest {
+    
     private Expresion exp1, exp2, exp3, exp4, exp5, exp6;
 
     @Before
@@ -25,7 +26,7 @@ public class ExpressionTest {
         this.exp6 = new Sumar(new Restar(new Numero(3), new Multiplicar(
                 new Dividir(this.exp1, new Numero(2)), new Numero(3))), this.exp1); // ((3-((4/2)*3))+4)
     }
-
+    
     @Test
     public void testValor() {
         assertEquals(4, this.exp1.operar());
