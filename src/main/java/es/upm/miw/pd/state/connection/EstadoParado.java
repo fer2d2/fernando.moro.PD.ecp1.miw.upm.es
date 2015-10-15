@@ -9,19 +9,19 @@ public class EstadoParado extends EstadoConexion {
     @Override
     public void abrir() {
         throw new UnsupportedOperationException("Acción no permitida... ");
-        
+
     }
 
     @Override
     public void cerrar() {
         throw new UnsupportedOperationException("Acción no permitida... ");
-        
+
     }
 
     @Override
     public void iniciar() {
         this.conexion.setEstado(new EstadoPreparado(this.conexion));
-        
+
     }
 
     @Override
@@ -31,13 +31,13 @@ public class EstadoParado extends EstadoConexion {
     @Override
     public void recibir(int response) {
         throw new UnsupportedOperationException("Acción no permitida... ");
-        
+
     }
 
     @Override
     public void enviar(String request) {
         throw new UnsupportedOperationException("Acción no permitida... ");
-        
+
     }
 
     @Override

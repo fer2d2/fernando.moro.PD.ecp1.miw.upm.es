@@ -13,7 +13,7 @@ public class EstadoPreparado extends EstadoConexion {
     @Override
     public void cerrar() {
         this.conexion.setEstado(new EstadoCerrado(this.conexion));
-        
+
     }
 
     @Override
@@ -23,20 +23,20 @@ public class EstadoPreparado extends EstadoConexion {
     @Override
     public void parar() {
         this.conexion.setEstado(new EstadoParado(this.conexion));
-        
+
     }
 
     @Override
     public void recibir(int response) {
         throw new UnsupportedOperationException("Acción no permitida... ");
-        
+
     }
 
     @Override
     public void enviar(String request) {
         this.conexion.getLink().enviar(request);
         this.conexion.setEstado(new EstadoEsperando(this.conexion));
-        
+
     }
 
     @Override
