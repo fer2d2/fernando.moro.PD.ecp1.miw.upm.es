@@ -1,6 +1,7 @@
 package es.upm.miw.pd.composite.expression.solution;
 
 public class Dividir extends Operacion {
+    
     public Dividir(Expresion elemento1, Expresion elemento2) {
         super(elemento1, elemento2);
     }
@@ -8,5 +9,10 @@ public class Dividir extends Operacion {
     @Override
     public int operar() {
         return this.elemento1.operar() / this.elemento2.operar();
+    }
+
+    @Override
+    public String toString() {
+        return "("+elemento1.toString()+"/"+elemento2.toString()+")";
     }
 }
