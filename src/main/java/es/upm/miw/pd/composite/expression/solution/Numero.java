@@ -1,7 +1,7 @@
 package es.upm.miw.pd.composite.expression.solution;
 
 public class Numero extends Expresion {
-    
+
     private int valor;
 
     public Numero(int valor) {
