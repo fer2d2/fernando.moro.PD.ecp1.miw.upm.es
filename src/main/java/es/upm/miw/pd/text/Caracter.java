@@ -13,7 +13,7 @@ public class Caracter extends Componente {
     }
 
     @Override
-    public String dibujar(Boolean uppercase) {
+    public String dibujar(boolean uppercase) {
         String dibujo = String.valueOf(this.caracter);
         
         if(uppercase) {
