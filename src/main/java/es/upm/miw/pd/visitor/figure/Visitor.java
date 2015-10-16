@@ -1,6 +1,6 @@
 package es.upm.miw.pd.visitor.figure;
 
-public abstract class Visitor {
+public interface Visitor {
     
     public abstract void visitSquareArea(Square square);
 
