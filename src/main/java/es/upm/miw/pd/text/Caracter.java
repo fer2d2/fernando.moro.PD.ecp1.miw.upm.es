@@ -3,7 +3,7 @@ package es.upm.miw.pd.text;
 public class Caracter extends Componente {
 
     private char caracter;
-    
+
     public Caracter(char caracter) {
         this.caracter = caracter;
     }
@@ -15,11 +15,11 @@ public class Caracter extends Componente {
     @Override
     public String dibujar(boolean uppercase) {
         String dibujo = String.valueOf(this.caracter);
-        
-        if(uppercase) {
+
+        if (uppercase) {
             return dibujo.toUpperCase();
         }
-        
+
         return dibujo;
     }
 

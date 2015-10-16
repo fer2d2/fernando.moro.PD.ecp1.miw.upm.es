@@ -10,7 +10,7 @@ public abstract class ComponenteCompuesto extends Componente {
     public Boolean isCompuesto() {
         return true;
     }
-    
+
     @Override
     public String dibujar(boolean uppercase) {
         String dibujo = obtenerDibujoDeComponentes(uppercase);
@@ -19,11 +19,11 @@ public abstract class ComponenteCompuesto extends Componente {
 
     private String obtenerDibujoDeComponentes(boolean uppercase) {
         String dibujo = "";
-        
+
         for (Componente componente : componentes) {
             dibujo += componente.dibujar(uppercase);
         }
-        
+
         return dibujo;
     }
 

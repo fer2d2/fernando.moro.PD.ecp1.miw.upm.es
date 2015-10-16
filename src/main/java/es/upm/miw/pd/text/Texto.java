@@ -3,14 +3,14 @@ package es.upm.miw.pd.text;
 public class Texto extends ComponenteCompuesto {
 
     private final String separador = "---o---\n";
-    
+
     @Override
     public void add(Componente componente) {
-        
-        if(!componente.isCompuesto()) {
+
+        if (!componente.isCompuesto()) {
             throw new UnsupportedOperationException("Solo se deberian introducir elementos compuestos");
         }
-        
+
         this.componentes.add(componente);
     }
 
