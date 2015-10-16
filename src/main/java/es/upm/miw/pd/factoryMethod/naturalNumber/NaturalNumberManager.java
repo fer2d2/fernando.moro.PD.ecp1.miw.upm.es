@@ -3,7 +3,7 @@ package es.upm.miw.pd.factoryMethod.naturalNumber;
 public class NaturalNumberManager {
 
     private NaturalNumberCreator naturalNumberCreator;
-    
+
     private NaturalNumber naturalNumber;
 
     public void setNaturalNumberCreator(NaturalNumberCreator naturalNumberCreator) {

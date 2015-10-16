@@ -6,5 +6,5 @@ public class NaturalNumberEsCreator extends NaturalNumberCreator {
     public NaturalNumber createNaturalNumber(int number) {
         return new NaturalNumberEs(number);
     }
-    
+
 }

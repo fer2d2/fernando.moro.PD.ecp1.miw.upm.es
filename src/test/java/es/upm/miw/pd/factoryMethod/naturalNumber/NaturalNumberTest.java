@@ -5,9 +5,9 @@ import org.junit.Test;
 import org.junit.Before;
 
 public class NaturalNumberTest {
-    
+
     NaturalNumberManager naturalNumberManager;
-    
+
     @Before
     public void before() {
         this.naturalNumberManager = new NaturalNumberManager();
@@ -20,7 +20,7 @@ public class NaturalNumberTest {
         NaturalNumber naturalNumber = this.naturalNumberManager.getNaturalNumber();
         assertEquals("uno", naturalNumber.getTextValue());
     }
-    
+
     @Test
     public void testNaturalNumberCreatorESOutOfBounds() {
         this.naturalNumberManager.setNaturalNumberCreator(new NaturalNumberEsCreator());
@@ -28,7 +28,7 @@ public class NaturalNumberTest {
         NaturalNumber naturalNumber = this.naturalNumberManager.getNaturalNumber();
         assertEquals("???", naturalNumber.getTextValue());
     }
-    
+
     @Test
     public void testNaturalNumberCreatorEN() {
         this.naturalNumberManager.setNaturalNumberCreator(new NaturalNumberEnCreator());
@@ -44,7 +44,7 @@ public class NaturalNumberTest {
         NaturalNumber naturalNumber = this.naturalNumberManager.getNaturalNumber();
         assertEquals("???", naturalNumber.getTextValue());
     }
-    
+
     @Test
     public void testNaturalNumberCreatorFR() {
         this.naturalNumberManager.setNaturalNumberCreator(new NaturalNumberFrCreator());
@@ -60,5 +60,5 @@ public class NaturalNumberTest {
         NaturalNumber naturalNumber = this.naturalNumberManager.getNaturalNumber();
         assertEquals("???", naturalNumber.getTextValue());
     }
-    
+
 }
