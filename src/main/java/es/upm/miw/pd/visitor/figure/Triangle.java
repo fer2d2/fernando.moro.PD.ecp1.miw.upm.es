@@ -12,18 +12,18 @@ public class Triangle extends Figure {
     }
 
     @Override
-    public double area() {
-        return base * height * 0.5;
-    }
-
-    @Override
-    public double numberOfSides() {
-        return 3;
-    }
-
-    @Override
     public String toString() {
         return super.toString();
     }
 
+    public double getBase() {
+        return base;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    
+    
 }
