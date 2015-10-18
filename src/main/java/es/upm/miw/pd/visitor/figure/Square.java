@@ -18,4 +18,9 @@ public class Square extends Figure {
         return side;
     }
 
+    
+    @Override
+    public void accept(Visitor v) {
+        v.visitSquare(this);
+    }
 }
