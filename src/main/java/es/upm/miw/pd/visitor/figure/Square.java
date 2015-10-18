@@ -10,18 +10,12 @@ public class Square extends Figure {
     }
 
     @Override
-    public double area() {
-        return side * side;
-    }
-
-    @Override
-    public double numberOfSides() {
-        return 4;
-    }
-
-    @Override
     public String toString() {
         return super.toString();
+    }
+
+    public double getSide() {
+        return side;
     }
 
 }
