@@ -7,13 +7,13 @@ public class CalculatorMementable extends Calculator {
 
     public CalculatorMementable() {
         super();
-        this.mementoManager = new MementoManager<Memento>(); 
+        this.mementoManager = new MementoManager<Memento>();
     }
-    
+
     public void save(String key) {
         this.mementoManager.addMemento(key, new Memento(this.getTotal()));
     }
-    
+
     public void undo() {
         String selectedKey = (String) IO.getIO().select(mementoManager.keys());
         int total = this.mementoManager.getMemento(selectedKey).getQuantity();

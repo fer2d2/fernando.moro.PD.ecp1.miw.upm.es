@@ -9,15 +9,15 @@ public class MementoManager<T> {
     public MementoManager() {
         this.backups = new HashMap<String, T>();
     }
-    
+
     public void addMemento(String key, T memento) {
         this.backups.put(key, memento);
     }
-    
-    public T getMemento(String key){
+
+    public T getMemento(String key) {
         return this.backups.get(key);
     }
-    
+
     public String[] keys() {
         return this.backups.keySet().toArray(new String[0]);
     }
