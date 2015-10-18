@@ -20,7 +20,7 @@ public class Square extends Figure {
 
     
     @Override
-    public void accept(Visitor v) {
-        v.visitSquare(this);
+    public double accept(Visitor v) {
+        return v.visitSquare(this);
     }
 }
