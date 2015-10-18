@@ -1,6 +1,6 @@
 package es.upm.miw.pd.visitor.figure;
 
-public class VisitorNumberOfSides {
+public class VisitorNumberOfSides implements Visitor {
 
     public double visitSquare(Square square) {
         return 4;
