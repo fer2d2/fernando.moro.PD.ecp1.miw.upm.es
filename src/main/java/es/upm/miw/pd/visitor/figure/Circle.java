@@ -13,4 +13,8 @@ public class Circle extends Figure {
         return radius;
     }
 
+    @Override
+    public void accept(Visitor v) {
+        v.visitCircle(this);
+    }
 }
