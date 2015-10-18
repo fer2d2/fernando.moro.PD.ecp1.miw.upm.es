@@ -1,6 +1,6 @@
 package es.upm.miw.pd.visitor.figure;
 
-public class Circle extends Figure {
+public class Circle extends FigureWithDescription implements Figure {
 
     private double radius;
 

@@ -1,6 +1,6 @@
 package es.upm.miw.pd.visitor.figure;
 
-public class Square extends Figure {
+public class Square extends FigureWithDescription implements Figure {
 
     private double side;
 

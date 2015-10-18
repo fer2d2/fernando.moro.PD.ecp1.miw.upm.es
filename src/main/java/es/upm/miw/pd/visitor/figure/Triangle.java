@@ -1,6 +1,6 @@
 package es.upm.miw.pd.visitor.figure;
 
-public class Triangle extends Figure {
+public class Triangle extends FigureWithDescription implements Figure {
     private double base;
 
     private double height;
