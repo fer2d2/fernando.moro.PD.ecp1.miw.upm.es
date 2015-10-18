@@ -19,6 +19,6 @@ public class MementoManager<T> {
     }
     
     public String[] keys() {
-        return (String[]) this.backups.keySet().toArray();
+        return this.backups.keySet().toArray(new String[0]);
     }
 }
