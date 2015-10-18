@@ -1,9 +1,9 @@
 package es.upm.miw.pd.calculator;
 
-public abstract class ComandoGenerico implements Comando {
+public abstract class CommandGeneric implements Command {
     protected Calculator calculator;
 
-    public ComandoGenerico(Calculator calculator) {
+    public CommandGeneric(Calculator calculator) {
         this.calculator = calculator;
     }
 }

@@ -1,6 +1,6 @@
 package es.upm.miw.pd.calculator;
 
-public class ResetCommand extends ComandoGenerico {
+public class ResetCommand extends CommandGeneric {
 
     public ResetCommand(Calculator calculator) {
         super(calculator);

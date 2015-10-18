@@ -2,7 +2,7 @@ package es.upm.miw.pd.calculator;
 
 import upm.jbb.IO;
 
-public class AddCommand extends ComandoGenerico {
+public class AddCommand extends CommandGeneric {
 
     public AddCommand(Calculator calculator) {
         super(calculator);
