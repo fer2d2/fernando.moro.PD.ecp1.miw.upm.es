@@ -24,6 +24,9 @@ public class Triangle extends Figure {
         return height;
     }
 
-    
+    @Override
+    public void accept(Visitor v) {
+        v.visitTriangle(this);
+    }
     
 }
