@@ -25,8 +25,8 @@ public class Triangle extends Figure {
     }
 
     @Override
-    public void accept(Visitor v) {
-        v.visitTriangle(this);
+    public double accept(Visitor v) {
+        return v.visitTriangle(this);
     }
     
 }
