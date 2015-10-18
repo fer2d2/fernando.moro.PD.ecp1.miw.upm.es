@@ -28,5 +28,5 @@ public class Triangle extends FigureWithDescription implements Figure {
     public double accept(Visitor v) {
         return v.visitTriangle(this);
     }
-    
+
 }

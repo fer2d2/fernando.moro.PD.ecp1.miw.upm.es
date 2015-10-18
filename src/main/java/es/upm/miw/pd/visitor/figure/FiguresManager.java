@@ -18,7 +18,7 @@ public class FiguresManager {
     public double totalArea() {
         double result = 0;
         for (Figure figure : figures) {
-            result += figure.accept((Visitor)new VisitorArea());
+            result += figure.accept((Visitor) new VisitorArea());
         }
         return result;
     }
@@ -26,7 +26,7 @@ public class FiguresManager {
     public double totalNumberOfSides() {
         double result = 0;
         for (Figure figure : figures) {
-            result += figure.accept((Visitor)new VisitorNumberOfSides());
+            result += figure.accept((Visitor) new VisitorNumberOfSides());
         }
         return result;
     }

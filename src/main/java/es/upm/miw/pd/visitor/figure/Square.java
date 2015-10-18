@@ -18,7 +18,6 @@ public class Square extends FigureWithDescription implements Figure {
         return side;
     }
 
-    
     @Override
     public double accept(Visitor v) {
         return v.visitSquare(this);
